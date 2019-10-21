@@ -1,0 +1,13 @@
+{
+    "name": "cyrille/twig",
+    "description": "Quete Twig",
+    "authors": [
+        {
+            "name": "Cyrille",
+            "email": "cyrille.stammler@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^2.12"
+    }
+}
