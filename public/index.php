@@ -1,13 +1,5 @@
 <?php
-
-require '../vendor/autoload.php';
-
-$products = ['product1', 'product2', 'product3', 'product4', 'product5'];
-
-$loader = new Twig_Loader_Filesystem(__DIR__.'/../View');
-$twig = new Twig_Environment($loader);
-
-echo $twig->render('index.html.twig', ['products'=>$products]);
-
-?>
-
+require_once '../vendor/autoload.php';
+$loader = new Twig\Loader\FilesystemLoader('../src/View');
+$twig = new Twig\Environment($loader , array('cache'=>false));
+echo $twig->render('index.html.twig');
